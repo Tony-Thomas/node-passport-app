@@ -18,6 +18,7 @@ app.set('view engine', 'ejs');
 
 //Set Static Folder
 app.set(express.static(path.join(__dirname, 'public')));
+app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 
 //BodyParser
 //https://github.com/expressjs/body-parser
